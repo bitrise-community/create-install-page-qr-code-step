@@ -2,7 +2,7 @@
 
 $query = [
     'size' => $_SERVER['qr_code_size'],
-    'data' => urlencode($_SERVER['public_install_page_url']),
+    'data' => $_SERVER['public_install_page_url'],
 ];
 
 $qrCodeImageURL = 'https://api.qrserver.com/v1/create-qr-code/?'.http_build_query($query);
