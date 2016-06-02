@@ -13,10 +13,8 @@ host_os_tags:
 - ubuntu-14.04
 - osx-10.11
 deps:
-  brew:
-  - name: homebrew/php/php56
   apt_get:
-  - name: php5
+  - name: php7
 run_if: .IsCI | and (not .IsPR)
 inputs:
   - public_install_page_url: $BITRISE_PUBLIC_INSTALL_PAGE_URL
