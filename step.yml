@@ -14,7 +14,7 @@ host_os_tags:
 - osx-10.11
 deps:
   apt_get:
-  - name: php7
+  - name: php7.0
 run_if: .IsCI | and (not .IsPR)
 inputs:
   - public_install_page_url: $BITRISE_PUBLIC_INSTALL_PAGE_URL
